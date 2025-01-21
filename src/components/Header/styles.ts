@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const HeaderBox = styled.div`
     width: 100%;
@@ -13,7 +14,7 @@ export const HeaderContainer = styled.div`
     padding: 8px 0;
 `
 
-export const NewButton = styled.button`
+export const NewButton = styled(Link)`
     background-color: #048900;
     color: #fff;
     border: none;
@@ -21,4 +22,9 @@ export const NewButton = styled.button`
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
+    text-decoration: none;
+`
+
+export const VoltarButton = styled(NewButton)`
+    background-color: #3b3b3b;
 `

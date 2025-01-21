@@ -17,17 +17,3 @@ export const ConstactInfo = styled.p`
 export const ContactInfoLabel = styled.span`
     font-weight: bold;
 `
-
-export const Button = styled.button`
-    padding: 12px;
-    border: none;
-    cursor: pointer;
-    margin-right: 8px;
-    color: #fff;
-    border-radius: 12px;
-    background-color: #3b3b3b;
-`
-
-export const EditButton = styled(Button)`
-    background-color: #00871d;
-`

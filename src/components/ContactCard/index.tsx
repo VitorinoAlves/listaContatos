@@ -1,5 +1,6 @@
 import React from "react";
-import { ContactCardContainer, CardTitle, ConstactInfo, ContactInfoLabel, Button, EditButton } from "./styles.ts";
+import { ContactCardContainer, CardTitle, ConstactInfo, ContactInfoLabel } from "./styles.ts";
+import { GreenButton, Button } from "../../styles/index.ts";
 
 type ContactCardProps = {
     id: string;
@@ -15,7 +16,7 @@ const ContactCard = ({ id, nome, email, telefone }: ContactCardProps) => {
             <ConstactInfo><ContactInfoLabel>Email: </ContactInfoLabel>{email}</ConstactInfo>
             <ConstactInfo><ContactInfoLabel>Telefone: </ContactInfoLabel>{telefone}</ConstactInfo>
             <div>
-                <EditButton type="button">Editar</EditButton>
+                <GreenButton type="button">Editar</GreenButton>
                 <Button type="button">Deletar</Button>
             </div>
         </ContactCardContainer>
