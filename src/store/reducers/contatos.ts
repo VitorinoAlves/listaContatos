@@ -6,31 +6,31 @@ const initialState: Contato[] = [
         id: '1',
         nome: 'Nome contato 01',
         email: 'test@email.com',
-        telefone: '55555-5555'
+        telefone: '(55)55555-5555'
     },
     {
         id: '2',
         nome: 'Nome contato 02',
         email: 'test@email.com',
-        telefone: '55555-5555'
+        telefone: '(55)55555-5555'
     },
     {
         id: '3',
         nome: 'Nome contato 03',
         email: 'test@email.com',
-        telefone: '55555-5555'
+        telefone: '(55)55555-5555'
     },
     {
         id: '4',
         nome: 'Nome contato 04',
         email: 'test@email.com',
-        telefone: '55555-5555'
+        telefone: '(55)55555-5555'
     },
     {
         id: '5',
         nome: 'Nome contato 05',
         email: 'test@email.com',
-        telefone: '55555-5555'
+        telefone: '(55)55555-5555'
     }
 ]
 

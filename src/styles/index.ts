@@ -1,4 +1,5 @@
 import { createGlobalStyle, styled } from "styled-components";
+import variaveis from "./variaveis.ts";
 
 const EstiloGlobal = createGlobalStyle`
     *{
@@ -15,13 +16,13 @@ export const Button = styled.button`
     border: none;
     cursor: pointer;
     margin-right: 8px;
-    color: #fff;
+    color: ${variaveis.branco};
     border-radius: 12px;
-    background-color: #3b3b3b;
+    background-color: ${variaveis.cinza};
 `
 
 export const GreenButton = styled(Button)`
-    background-color: #00871d;
+    background-color: ${variaveis.verde};
 `
 
 export default EstiloGlobal
