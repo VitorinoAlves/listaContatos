@@ -17,6 +17,10 @@ const rotas = createBrowserRouter([
   {
     path: '/form',
     element: <Formulario></Formulario>
+  },
+  {
+    path: '/edit/:contatoId',
+    element: <Formulario></Formulario>
   }
 ])
 

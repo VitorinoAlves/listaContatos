@@ -1,9 +1,7 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import Contato from "../../models/Contato";
 
-type ContatoState = Contato[];
-
-const initialState: ContatoState = [
+const initialState: Contato[] = [
     {
         id: '1',
         nome: 'Nome contato 01',
@@ -40,8 +38,25 @@ const contatoSlice = createSlice({
     name: 'contatos',
     initialState,
     reducers: {
+        conatatoAdiciondo(state, action: PayloadAction<Contato>){
+            state.push(action.payload);
+        },
+        contatoEditado(state, action: PayloadAction<Contato>){
+            const { id, nome, telefone, email} = action.payload;
+            const contatoExistente = state.find(contato => contato.id === id);
 
+            if(contatoExistente){
+                contatoExistente.nome = nome;
+                contatoExistente.telefone = telefone;
+                contatoExistente.email = email;
+            }
+        },
+        contatoDeletado(state, action: PayloadAction<string>){
+            return state.filter((contato) => contato.id !== action.payload);
+        }
     }
 });
+
+export const { conatatoAdiciondo, contatoEditado, contatoDeletado } = contatoSlice.actions;
 
 export default contatoSlice.reducer;
